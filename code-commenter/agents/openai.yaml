@@ -1,0 +1,7 @@
+interface:
+  display_name: "代码注释"
+  short_description: "为 Java、JS、TS 与 Python 添加中文注释"
+  default_prompt: "Use $code-commenter to add concise Chinese comments to the selected code."
+
+policy:
+  allow_implicit_invocation: false
