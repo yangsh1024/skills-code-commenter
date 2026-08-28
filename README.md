@@ -13,12 +13,12 @@
 
 ## 安装
 
-将整个 `code-commenter` 目录复制到客户端的 Skills 目录。
+将本仓库的内容放入客户端中名为 `code-commenter` 的 Skill 目录。
 
 | 客户端 | 安装目录 |
 | --- | --- |
-| Claude Code | `~/.claude/skills/code-commenter` |
-| Codex | `$CODEX_HOME/skills/code-commenter`；未设置时为 `~/.codex/skills/code-commenter` |
+| Claude Code | `~/.claude/skills/code-commenter/` |
+| Codex | `$CODEX_HOME/skills/code-commenter/`；未设置时为 `~/.codex/skills/code-commenter/` |
 
 重启客户端或刷新 Skills 列表后生效。
 
@@ -39,7 +39,7 @@
 ## 项目结构
 
 ```text
-code-commenter/
+.
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
