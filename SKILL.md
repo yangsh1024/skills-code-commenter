@@ -29,11 +29,13 @@ disable-model-invocation: true
 
 - 为目标类或接口添加职责或设计目的说明，使用 1–2 句话。
 - 不说明使用的框架、导入项或依赖服务。
-- Java、JavaScript、TypeScript 使用 `/** ... */`；Python 使用类 docstring（`"""..."""`）。
+- Java、JavaScript、TypeScript 使用 `/** ... */`，且必须位于所有注解或装饰器之上：文档注释 → 注解/装饰器 → 类或接口声明。
+- Python 的装饰器必须位于 `class` 声明之前；类 docstring（`"""..."""`）作为类体第一句，不放在装饰器外侧。
 
 ### 方法与函数
 
 - 文档注释依次包含：一句功能概述、核心步骤摘要、参数、返回值与异常。
+- `public`、`protected` 与 `private` 方法均按本节添加方法注释；getter、setter 与自动生成代码除外。
 - 核心步骤摘要使用编号列表；每项仅写 2–6 个字的步骤名，不写调用、参数或实现细节。
 - 步骤名称必须忠于已有业务语义，不把状态更新、数据写入等实现动作虚构为额外的业务阶段。
 - Java、JavaScript、TypeScript 使用 `@param`、`@return`、`@throws`；Python 在 docstring 中使用 `Args`、`Returns`、`Raises`。
