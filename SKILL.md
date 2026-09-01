@@ -36,6 +36,8 @@ disable-model-invocation: true
 
 - 文档注释依次包含：一句功能概述、核心步骤摘要、参数、返回值与异常。
 - `public`、`protected` 与 `private` 方法均按本节添加方法注释；getter、setter 与自动生成代码除外。
+- Java、JavaScript、TypeScript 的方法文档注释必须位于所有方法注解或装饰器之上：文档注释 → 注解/装饰器 → 方法声明。
+- Python 的方法装饰器必须位于 `def` 声明之前；方法 docstring 作为函数体第一句，不放在装饰器外侧。
 - 核心步骤摘要使用编号列表；每项仅写 2–6 个字的步骤名，不写调用、参数或实现细节。
 - 步骤名称必须忠于已有业务语义，不把状态更新、数据写入等实现动作虚构为额外的业务阶段。
 - Java、JavaScript、TypeScript 使用 `@param`、`@return`、`@throws`；Python 在 docstring 中使用 `Args`、`Returns`、`Raises`。
